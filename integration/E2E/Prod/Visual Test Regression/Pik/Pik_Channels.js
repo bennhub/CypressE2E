@@ -31,6 +31,7 @@ cy.contains('View terms and conditions').click()
 .wait(2000) 
 //snapshots page for comparison
 cy.compareSnapshot("Pik Channels");
+cy.matchImageSnapshot();
 cy.percySnapshot("Pik channels");
 
     })

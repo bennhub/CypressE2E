@@ -26,6 +26,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Optik PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Optik PLP");
 
 

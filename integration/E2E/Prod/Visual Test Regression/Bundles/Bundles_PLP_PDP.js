@@ -27,6 +27,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("bundles PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Bundles PLP");
 
 // Offers grid snap
@@ -41,6 +42,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("bundles PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("bundles PDP");
 
 

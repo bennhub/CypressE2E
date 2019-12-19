@@ -32,6 +32,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Optik Channels");
+cy.matchImageSnapshot();
 cy.percySnapshot("Optik Channels");
 
     })

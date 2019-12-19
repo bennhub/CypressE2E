@@ -21,6 +21,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Int PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int PDP");
 
 //go to internet 150 no-term PDP
@@ -32,6 +33,7 @@ cy.contains('View terms and conditions').click()
          .wait(2000) 
 //snapshots page for comparison
 cy.compareSnapshot("Int_150 NoTerm");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int_150_noTerm");
     
 //visit internet 75 2yr PDP
@@ -44,6 +46,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Int 75 2yr PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int 75 2yr Term PDP");
 
 //go to internet 75 no-term PDP
@@ -57,7 +60,9 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Int 75 noTerm PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int 75 no Term PDP");
+
 
 
 

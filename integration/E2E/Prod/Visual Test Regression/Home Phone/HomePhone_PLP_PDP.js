@@ -23,8 +23,9 @@ cy.get('[data-qa=button-home-phone]').click()
 cy.contains('View terms and conditions').click()
 .wait(2000) 
 
-//snapshots page for comparison
+//snapshots page for comparisons
 cy.compareSnapshot("Homephone PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Homephone PLP");
 
 //visit Home Phone Lite
@@ -41,6 +42,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("HomephoneLite PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("HomephoneLite PDP");
 
 //visit basics + crave PDP
@@ -58,6 +60,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Homephone PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Homephone PDP");
 
     })

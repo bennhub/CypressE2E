@@ -25,6 +25,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Pik Addons PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Pik Addons PLP");
 
 //visit Pik Addon Apple TV 32gb
@@ -48,6 +49,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Pik Addons Apple TV");
+cy.matchImageSnapshot();
 cy.percySnapshot("Pik Addons Apple TV");
 
 

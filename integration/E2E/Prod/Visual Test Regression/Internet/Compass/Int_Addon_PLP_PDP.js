@@ -24,6 +24,7 @@ cy.contains('View terms and conditions').click()
          .wait(2000) 
 //snapshots page for comparison
 cy.compareSnapshot("Int_Addon_PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int_addon_PLP");
 
 //visit internet Addon Telus Boost PDP
@@ -35,6 +36,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Int_Addon_TB_PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("IntAddon_TB_PDP");
 
 

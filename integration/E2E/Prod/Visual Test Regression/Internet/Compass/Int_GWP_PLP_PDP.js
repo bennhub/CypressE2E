@@ -25,6 +25,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Int Gwp PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int Gwp Plp");
 
 //visit internet GWP Visa PDP
@@ -36,6 +37,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Int Gwp Visa PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int Gwp Visa PDP");
 
 

@@ -24,6 +24,7 @@ cy.contains('View terms and conditions').click()
          .wait(2000) 
 //snapshots page for comparison
 cy.compareSnapshot("Optik Gwp PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Optik Gwp PLP");
 
 //visit internet GWP Visa PDP
@@ -39,6 +40,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Optik Gwp Visa PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Optik Gwp Visa PDP");
 
 

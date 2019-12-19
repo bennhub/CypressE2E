@@ -76,6 +76,7 @@ cy.contains('View terms and conditions').click()
          .wait(2000) 
 //snapshots page for comparison
 cy.compareSnapshot("Basics+Crave PDP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Basics+Crave PDP");
 
     })

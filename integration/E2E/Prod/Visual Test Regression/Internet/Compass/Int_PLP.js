@@ -24,6 +24,7 @@ cy.contains('View terms and conditions').click()
 
 //snapshots page for comparison
 cy.compareSnapshot("Int PLP");
+cy.matchImageSnapshot();
 cy.percySnapshot("Int PLP");
 
 
