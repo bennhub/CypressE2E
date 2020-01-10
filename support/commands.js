@@ -24,19 +24,23 @@
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
 
-import '@percy/cypress';
+//percy Import
+//import '@percy/cypress';
 
-const compareSnapshotCommand = require('cypress-visual-regression/dist/command');
- 
-compareSnapshotCommand();
+//cypress Vis Reg 
+//const compareSnapshotCommand = require('cypress-visual-regression/dist/command');
+ //compareSnapshotCommand();
 
+//Image Snapshot
 import { addMatchImageSnapshotCommand } from 'cypress-image-snapshot/command';
 addMatchImageSnapshotCommand({
   failureThreshold: 0.00,
   failureThresholdType: 'percent',
   customDiffConfig: { threshold: 0.0 },
-  capture: 'viewport',
+  //capture: 'viewport',
 });
+
+
 Cypress.Commands.add("setResolution", (size) => {
   if (Cypress._.isArray(size)) {
      cy.viewport(size[0], size[1]);

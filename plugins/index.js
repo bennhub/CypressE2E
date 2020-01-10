@@ -11,24 +11,26 @@
 // This function is called when a project is opened or re-opened (e.g. due to
 // the project's config changing)
 
+// In cypress/plugins/index.js
+//let percyHealthCheck = require('@percy/cypress/task')
 
-const getCompareSnapshotsPlugin = require('cypress-visual-regression/dist/plugin');
+//module.exports = (on, config) => {
+ // on("task", percyHealthCheck);
+//};
+
+//visual reggression snapshot
+/*const getCompareSnapshotsPlugin = require('cypress-visual-regression/dist/plugin');
  
 module.exports = (on) => {
   getCompareSnapshotsPlugin(on);
-};
-
-// In cypress/plugins/index.js
-let percyHealthCheck = require('@percy/cypress/task')
-
-module.exports = (on, config) => {
-  on("task", percyHealthCheck);
-};
+};*/
 
 
+                               
+// Image snapshot
 const {
-  addMatchImageSnapshotPlugin,
+addMatchImageSnapshotPlugin,
  } = require('cypress-image-snapshot/plugin');
- module.exports = (on, config) => {
-   addMatchImageSnapshotPlugin(on, config);
+module.exports = (on, config) => {
+ addMatchImageSnapshotPlugin(on, config);
  };
